@@ -1,0 +1,22 @@
+<div>
+  <div>
+    <mat-form-field>
+      <mat-label>Select file type</mat-label>
+      <mat-select>
+        @for (FileTypes of FileTypes; track FileTypes) {
+        <mat-option [value]="FileTypes.value">{{FileTypes.viewValue}}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label>Select imgage size</mat-label>
+      <mat-select>
+        @for (imgSize of imgSizes; track imgSize) {
+        <mat-option [value]="imgSize.value">{{imgSize.viewValue}}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
